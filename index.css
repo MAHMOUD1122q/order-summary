@@ -1,0 +1,97 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display",sans-serif;
+}
+.back img{
+    width: 100%;
+}
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    background-color: white;
+    width: 390px;
+    height: 560px;
+    box-shadow: 5px 4px 20px -10px black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.container .title {
+    font-size: 24px;
+    text-align: center;
+    padding: 25px 0px 15px;
+}
+.container .disc {
+    padding-bottom: 18px;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    text-align: center;
+}
+.container .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.container .section .logo {
+    display: flex;
+    align-items: center;
+}
+.container .section .logo h3 {
+  font-size: 16px;
+  padding-left: 5px;
+}
+.container .section .logo h3 span {
+  display: block;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 200;
+}
+.container .section .chg {
+    color: hsl(245, 75%, 52%);
+    transition: 0.5s;
+}
+.container .section .chg:hover{
+    text-decoration: none;
+    color: hsla(209, 75%, 52%, 0.705) ;
+}
+.container button {
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 600;
+    margin: 30px 0px 30px 37px;
+    padding: 15px 100px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 20px -9px black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container button:hover {
+    background-color: hsla(209, 75%, 52%, 0.705);
+}
+.container .cancel {
+  display: block;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    transition: 0.5s;
+}
+.container .cancel:hover {
+    color: black;
+}
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
